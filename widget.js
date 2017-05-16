@@ -5,7 +5,7 @@
     var hitmarkerStyles = document.createElement("link");
     hitmarkerStyles.rel = "stylesheet";
     hitmarkerStyles.type = "text/css";
-    hitmarkerStyles.href = "https://rawgit.com/craigh44/hitmarker-widget/master/hitmarkerwidget.css";
+    hitmarkerStyles.href = "https://rawgit.com/hitmarkerjobs/jobs-feed/master/hitmarkerwidget.css";
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
@@ -29,7 +29,7 @@
     }
       function appendJobs (jobs) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://raw.githubusercontent.com/craigh44/hitmarker-widget/master/index.html');
+        xhr.open('GET', 'https://rawgit.com/hitmarkerjobs/jobs-feed/master/index.html');
         xhr.send(null);
 
         xhr.onreadystatechange = function () {
