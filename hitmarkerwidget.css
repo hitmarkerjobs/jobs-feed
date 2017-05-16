@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+#hitmarker-widget {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #0A0A0A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: var(--font-weight-normal);
+}
+#hitmarker-widget img, svg {
+	vertical-align: middle;
+}
+#hitmarker-widget a {
+	color: currentColor;
+	text-decoration: none;
+}
+#hitmarker-widget {
+	border: 1px solid #E2E2E2;
+	background-color: #fff;
+}
+#hitmarker-widget .title {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: .75rem;
+	line-height: 1;
+	padding: 1rem;
+
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#hitmarker-widget .title span {
+	margin-left: .5rem;
+}
+#hitmarker-widget .job {
+	border-top: 1px solid #E2E2E2;
+	padding: 1rem;
+
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#hitmarker-widget .job:hover,
+#hitmarker-widget .job:focus {
+	background-color: #FBFBFB;
+}
+#hitmarker-widget .logo {
+	margin-right: .75rem;
+
+	-webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+}
+#hitmarker-widget .info {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 0;
+}
+#hitmarker-widget .company {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+#hitmarker-widget .role {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-size: .875rem;
+	margin-bottom: 5px;
+}
+#hitmarker-widget .location {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-size: .75rem;
+	margin-bottom: 5px;
+}
+#hitmarker-widget .time {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+	font-size: .75rem;
+	color: #ADADAD;
+}
+#hitmarker-widget .footer {
+	border-top: 1px solid #E2E2E2;
+	padding: .5rem 1rem;
+
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#hitmarker-widget .footer a {
+	color: #F70;
+	font-size: .75rem;
+	line-height: 1;
+}
+#hitmarker-widget .footer span {
+	text-align: right;
+	margin-left: .5rem;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 0;
+}
