@@ -1,5 +1,7 @@
 (function (){
     var element = document.getElementById("hitmarker-jobs-feed");
+    var company = element.getAttribute('company');
+    var url;
 
     var normalizeStyles = document.createElement("link");
     var hitmarkerStyles = document.createElement("link");
@@ -9,8 +11,14 @@
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
+    if (company) {
+      url = 'https://hitmarkerjobs.com/jobs/' + company + '.json'
+    } else {
+      url = 'https://hitmarkerjobs.com/jobs.json'
+    }
+
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://hitmarkerjobs.com/jobs.json');
+    xhr.open('GET', url);
     xhr.send(null);
 
     xhr.onreadystatechange = function () {
