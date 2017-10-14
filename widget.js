@@ -13,7 +13,7 @@
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
-    url = 'https://www.hitmarkerjobs.com/jobs.json';
+    url = 'https://hitmarkerjobs.com/jobs.json';
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
