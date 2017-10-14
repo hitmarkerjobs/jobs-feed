@@ -1,7 +1,8 @@
 (function (){
     var element = document.getElementById("hitmarker-jobs-feed");
-    var company = element.getAttribute('company');
-    var location = element.getAttribute('location');
+    var countries = element.getAttribute('countries');
+    var cities = element.getAttribute('cities');
+    var companies = element.getAttribute('companies');
     var url;
 
     var normalizeStyles = document.createElement("link");
@@ -12,16 +13,23 @@
     hitmarkerStyles.media = "all";
     document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
-    if (company) {
-      url = 'https://hitmarkerjobs.com/jobs/' + company + '.json';
-    } else if (location) {
-      url = 'https://hitmarkerjobs.com/jobs-location/' + location + '.json';
-    } else {
-      url = 'https://hitmarkerjobs.com/jobs.json';
-    }
+    url = 'http://staging.hitmarkerjobs.com/jobs.json';
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
+
+    if (countries) {
+      xhr.setRequestHeader('countries', countries);
+    }
+
+    if (cities) {
+      xhr.setRequestHeader('cities', cities);
+    }
+
+    if (companies) {
+      xhr.setRequestHeader('companies', companies);
+    }
+
     xhr.send(null);
 
     xhr.onreadystatechange = function () {
@@ -38,6 +46,7 @@
         }
       }
     }
+
       function appendJobs (jobs) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'https://rawgit.com/hitmarkerjobs/jobs-feed/master/index.html');
