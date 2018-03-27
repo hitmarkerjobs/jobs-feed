@@ -67,9 +67,9 @@
 #hitmarker-widget .company {
 	white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-
-	font-weight: 700;
+	text-overflow: ellipsis;
+	color: #7f7f7f;
+	font-weight: 500;
 	margin-bottom: 5px;
 }
 #hitmarker-widget .role {
