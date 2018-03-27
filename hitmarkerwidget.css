@@ -122,6 +122,7 @@
 
 #hitmarker-widget .job-logo {
 	border-radius: 100%;
+	margin-top: 2.5px;
 }
 
 #hitmarker-widget .job-date {
