@@ -89,8 +89,8 @@
 
         var logoImg = document.createElement("img");
         logoImg.src = jobs[i].imageUrl;
-        logoImg.width = '32';
-        logoImg.height = '32';
+        logoImg.width = '50';
+        logoImg.height = '50';
         logoImg.classList.add("job-logo");
 
         logoWrapper.appendChild(logoImg);
@@ -108,6 +108,10 @@
         var jobDate = document.createElement("span");
         jobDate.classList.add('job-date');
 
+        var jobLocation = document.createElement("div");
+        jobLocation.classList.add('location');
+        jobLocation.innerHTML = jobs[i].location + ' &bull; ' + jobs[i].contract;
+        
         jobDate.innerHTML = jobs[i].date + ' by ';
         jobCompany.innerHTML = jobs[i].company;
         jobTitle.innerHTML = jobs[i].title;
@@ -115,6 +119,7 @@
         jobInfoWrapper.appendChild(jobTitle);
         jobInfoWrapper.appendChild(jobDate);
         jobInfoWrapper.appendChild(jobCompany);
+        jobInfoWrapper.appendChild(jobLocation);
 
         jobWrapper.appendChild(jobInfoWrapper);
 
