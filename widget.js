@@ -3,6 +3,8 @@
   var countries = element.getAttribute('countries');
   var cities = element.getAttribute('cities');
   var companies = element.getAttribute('companies');
+  var volunteer = element.getAttribute('volunteer');
+
   var url;
 
   var normalizeStyles = document.createElement("link");
@@ -13,7 +15,7 @@
   hitmarkerStyles.media = "all";
   document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
-  url = 'https://hitmarkerjobs.com/jobs.json';
+url = 'https://hitmarkerjobs.com/jobs.json';
 
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url);
@@ -28,6 +30,10 @@
 
   if (companies) {
     xhr.setRequestHeader('companies', companies);
+  }
+
+  if (volunteer) {
+    xhr.setRequestHeader('volunteer', volunteer);
   }
 
   xhr.send(null);
