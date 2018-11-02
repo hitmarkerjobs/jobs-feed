@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
 #hitmarker-widget {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	color: #0A0A0A;
+	color: #121212;
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: normal;
+	
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: var(--font-weight-normal);
 }
-#hitmarker-widget img, svg {
+#hitmarker-widget img {
 	vertical-align: middle;
 }
 #hitmarker-widget a {
@@ -16,31 +15,18 @@
 	text-decoration: none;
 }
 #hitmarker-widget {
-	border: 1px solid #E2E2E2;
-	background-color: #fff;
+	border: 1px solid #e0e0e0;
+	background-color: white;
 }
 #hitmarker-widget .title {
-	font-weight: 700;
+	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: .05em;
-	font-size: .75rem;
 	line-height: 1;
-	padding: 1rem;
-
-	display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-#hitmarker-widget .title span {
-	margin-left: .5rem;
+	padding: 16px;
 }
 #hitmarker-widget .job {
-	border-top: 1px solid #E2E2E2;
-	padding: 1rem;
+	border-top: 1px solid #e0e0e0;
+	padding: 16px;
 
 	display: -webkit-box;
   display: -ms-flexbox;
@@ -48,14 +34,18 @@
 }
 #hitmarker-widget .job:hover,
 #hitmarker-widget .job:focus {
-	background-color: #FBFBFB;
+	color: #ff6810;
 }
 #hitmarker-widget .logo {
-	margin-right: .75rem;
+	margin-right: 16px;
 
 	-webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
+}
+#hitmarker-widget .logo > img {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
 }
 #hitmarker-widget .info {
 	-webkit-box-flex: 1;
@@ -65,67 +55,17 @@
 	min-height: 0;
 }
 #hitmarker-widget .company {
-	white-space: nowrap;
-  overflow: hidden;
-	text-overflow: ellipsis;
-	color: #7f7f7f;
-	font-weight: 600;
-	margin-bottom: 5px;
+	font-weight: bold;
 }
 #hitmarker-widget .role {
-	white-space: nowrap;
-  overflow: hidden;
-	text-overflow: ellipsis;
-	
-	font-weight: 700;
-	font-size: .875rem;
-	margin-bottom: 5px;
+	font-weight: bold;
 }
-#hitmarker-widget .location {
-	white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-	color: #7f7f7f;
-	font-size: .75rem;
-	margin-top: 5px;
-}
-#hitmarker-widget .time {
-	white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
-	font-size: .75rem;
-	color: #ADADAD;
-}
 #hitmarker-widget .footer {
-	border-top: 1px solid #E2E2E2;
-	padding: .5rem 1rem;
-
-	display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+	border-top: 1px solid #e0e0e0;
+	padding: 16px;
+	text-align: right;
 }
 #hitmarker-widget .footer a {
-	color: #F70;
-	font-size: .75rem;
-	line-height: 1;
-}
-#hitmarker-widget .footer span {
-	text-align: right;
-	margin-left: .5rem;
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
-	min-width: 0;
-	min-height: 0;
-}
-
-#hitmarker-widget .job-logo {
-	border-radius: 100%;
-	margin-top: 2.5px;
-}
-
-#hitmarker-widget .job-date {
-	color: #7f7f7f;
-	margin-bottom: 5px;
+	color: #ff6810;
 }
