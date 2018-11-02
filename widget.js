@@ -11,7 +11,7 @@
   var hitmarkerStyles = document.createElement("link");
   hitmarkerStyles.rel = "stylesheet";
   hitmarkerStyles.type = "text/css";
-  hitmarkerStyles.href = "https://rawgit.com/hitmarkerjobs/jobs-feed/master/hitmarkerwidget.css";
+  hitmarkerStyles.href = "https://hitmarkerjobs.github.io/jobs-feed/style.css";
   hitmarkerStyles.media = "all";
   document.getElementsByTagName("head")[0].appendChild(hitmarkerStyles);
 
@@ -55,7 +55,7 @@ url = 'https://hitmarkerjobs.com/jobs.json';
 
     function appendJobs (jobs) {
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://rawgit.com/hitmarkerjobs/jobs-feed/master/index.html');
+      xhr.open('GET', 'https://hitmarkerjobs.github.io/jobs-feed/index.html');
       xhr.send(null);
 
       xhr.onreadystatechange = function () {

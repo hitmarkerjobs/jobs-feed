@@ -46,8 +46,10 @@
 #hitmarker-widget .logo > img {
 	border: 1px solid #e0e0e0;
 	border-radius: 4px;
-} 
+}
 #hitmarker-widget .info {
+	line-height: 1.5;
+
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
@@ -55,17 +57,29 @@
 	min-height: 0;
 }
 #hitmarker-widget .company {
+	color: #121212;
 	font-weight: bold;
 }
 #hitmarker-widget .role {
 	font-weight: bold;
 }
+#hitmarker-widget .job-date {
+	color: #121212;
+}
+#hitmarker-widget .location {
+	color: #121212;
+}
 
 #hitmarker-widget .footer {
-	border-top: 1px solid #e0e0e0;
-	padding: 16px;
-	text-align: right;
+	padding: 0 16px 16px;
 }
 #hitmarker-widget .footer a {
-	color: #ff6810;
+	background-color: #ff6810;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+	text-align: center;
+	display: block;
+	padding: 8px;
+
 }
