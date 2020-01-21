@@ -111,19 +111,14 @@ url = 'https://hitmarkerjobs.com/jobs.json';
         var jobCompany = document.createElement("span");
         jobCompany.classList.add('company');
 
-        var jobDate = document.createElement("span");
-        jobDate.classList.add('job-date');
-
         var jobLocation = document.createElement("div");
         jobLocation.classList.add('location');
         jobLocation.innerHTML = jobs[i].location + ' &bull; ' + jobs[i].contract;
         
-        jobDate.innerHTML = jobs[i].date + ' by ';
         jobCompany.innerHTML = jobs[i].company;
         jobTitle.innerHTML = jobs[i].title;
 
         jobInfoWrapper.appendChild(jobTitle);
-        jobInfoWrapper.appendChild(jobDate);
         jobInfoWrapper.appendChild(jobCompany);
         jobInfoWrapper.appendChild(jobLocation);
 
